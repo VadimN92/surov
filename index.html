@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+
+</head>
+<body>
+	<!--[if lt IE 8]>
+     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="wrapper clearfix">
+
+        <div class="menu-selector">
+            <ul>
+                <li><a href="#">Два окна</a></li>
+                <li><a href="#">Три окна</a></li>
+                <li><a href="#">Балкон</a></li>
+            </ul>
+        </div>
+
+
+        <div class="content clearfix">
+            <figure class="img-wrapper">
+                <div class="descr">
+                     <h5>Classico</h5>
+                    <i class="descr-i">Экономное решение</i>
+                </div>
+                <img src="http://img-fotki.yandex.ru/get/6623/161754466.9d/0_8249e_e5df2a3_XL" class="image" alt="Image">
+                <div>
+                    <p class="price">
+                        От <br><span>10 450</span><br> рублей
+                    </p>
+                </div>
+                <ul class="descr-list">
+                    <li><span title="Here must be some text">Доступное качествоо</span></li>
+                    <li><span title="Here must be some text">Экологичность</span></li>
+                    <li><span title="Here must be some text">Энергосбережение</span></li>
+                    <li><span title="Here must be some text">Шумоизоляция</span></li>
+                    <li><span title="Here must be some text">Теплопередаче</span></li>
+                </ul>
+                <div class="rating">
+                    <ul>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <button class="btn-calcul">Рассчитать</button>
+            </figure>
+
+            <figure class="img-wrapper">
+                <div class="descr">
+                    <h5>Komfortum</h5>
+                    <i class="descr-i">Максимальный комфорт</i>
+                </div>
+                <img src="http://img-fotki.yandex.ru/get/6623/161754466.9d/0_8249e_e5df2a3_XL" class="image" alt="Image">
+                <div>
+                    <p class="price">
+                        От <br><span>10 450</span><br> рублей
+                    </p>
+                </div>
+                <ul class="descr-list">
+                    <li><span title="Here must be some text">Повышенное сбережение тепла</span></li>
+                    <li><span title="Here must be some text">Повышенная шумоизоляция</span></li>
+                    <li><span title="Here must be some text">Опции для комфорта</span></li>
+                    <li><span title="Here must be some text">Увеличенная жесткость</span></li>
+                    <li><span title="Here must be some text">Теплопередаче</span></li>
+                </ul>
+                <div class="rating">
+                    <ul>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <button class="btn-calcul">Рассчитать</button>
+            </figure>
+
+            <figure class="img-wrapper">
+                <div class="descr">
+                     <h5>Luxury</h5>
+                    <i class="descr-i">Инновации</i>
+                </div>
+                <img src="http://img-fotki.yandex.ru/get/6623/161754466.9d/0_8249e_e5df2a3_XL" class="image" alt="Image">
+                <div>
+                    <p class="price">
+                        От <br><span>10 450</span><br> рублей
+                    </p>
+                </div>
+                <ul class="descr-list">
+                    <li><span title="Here must be some text">Минимизация расходов на отопление</span></li>
+                    <li><span title="Here must be some text">Максимальная теплозащита</span></li>
+                    <li><span title="Here must be some text">Максимальная звукоизоляция</span></li>
+                    <li><span title="Here must be some text">Увеличенная монтажная глубина</span></li>
+                    <li><span title="Here must be some text">Теплопередаче</span></li>
+                </ul>
+                <div class="rating">
+                    <ul>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <button class="btn-calcul">Рассчитать</button>
+            </figure>
+        </div>
+
+
+
+
+        <div class="summary">
+            <div id="accordion">
+            <h3>Профиль</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Ширина</td>
+                      <td>58мм</td>
+                      <td>70мм</td>
+                      <td>76мм</td>
+                    </tr>
+                    <tr>
+                      <td>Количество камер</td>
+                      <td>3</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                </table>
+            </div>
+            <h3>Стеклопакет</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Ширина</td>
+                      <td>до 32мм</td>
+                      <td>до 36мм</td>
+                      <td>до 48мм</td>
+                    </tr>
+                    <tr>
+                      <td>Увеличение теплоизоляции</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Увеличение шумозоляции</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Тонировка</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Внутренняя раскладка</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Цвет уплотнителя</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                        <th>Luxury</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Черный,серый</td>
+                        <td>Черный</td>
+                        <td>Черный,серый,белый</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Дизайн</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Ламинация профиля по RENOLIT</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Покраска профиля по RAL</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Арки,трапеции</td>
+                      <td class="symbol-cross">×</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Скрытые петли</td>
+                      <td class="symbol-cross">×</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Проветривание</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Откидной механизм</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Микровентиляция</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Микровентиляция регулируемая</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Гребенка</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Air Box клапан</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Aereco клапан</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Детская безопасность</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Детский замок</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Ручка с ключом</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Система Tilt First</td>
+                      <td class="symbol-cross">×</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Антивор</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Защита фурнитуры</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Специальные стекла</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Энергосбережение</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Энергосберегающие пакеты</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Теплопакеты</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Ультрапакеты</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Сетки</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td>Антимоскитные</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Антипыльца</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+                    <tr>
+                      <td>Антикошка</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                      <td class="galka">✓</td>
+                    </tr>
+            </table>
+            </div>
+            <h3>Экологичность</h3>
+            <div class="s-item">
+                <table class="s-table">
+                    <tr class="s-table-list">
+                       <th></th>
+                       <th>Classico</th>
+                       <th>Komfortum</th>
+                       <th>Luxury</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Без свинца</td>
+                      <td>Без свинца</td>
+                      <td>Без свинца</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
